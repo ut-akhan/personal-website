@@ -1,0 +1,16 @@
+.warning {
+    line-height: 50px;
+    background-color: rgb(254, 178, 178);
+    margin-left: 200px;
+    margin-right: 200px;
+    border-style: solid;
+    border-color: rgb(254, 139, 139);
+    text-align: center;
+}
+
+.top-image-experience {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0% 80%;
+}

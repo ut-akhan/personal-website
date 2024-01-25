@@ -1,0 +1,74 @@
+.top-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0% 20%;
+}
+
+.inner-page {
+    display: flex;
+    margin: 20px;
+}
+
+.info-page {
+    margin-top: 50px;
+    flex: 4;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 100px;
+    padding-top: 50px;
+    column-gap: 25px;
+}
+
+.current-activities {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.my-picture {
+    margin-top: 18px;
+    width: 280px;
+    border-radius: 25px;
+}
+
+.name {
+    font-weight: 1000;
+}
+
+.pin-emoji {
+    width: 50px;
+}
+
+.utfr-link {
+    text-decoration: underline;
+}
+
+.utfr-link:hover {
+    cursor: pointer;
+    color: rgb(252, 73, 73);
+    transition: 0.15s;
+}
+
+.contact-info-home {
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(226, 226, 226);
+    border-width: 1px;
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-right: 120px;
+    line-height: 30px;
+    color: black;
+}
+
+.contact-info-home-text {
+    background-color: rgb(232, 232, 232);
+    font-family: Inconsolata, Arial;
+    color: brown;
+}

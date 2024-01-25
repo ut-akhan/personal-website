@@ -1,0 +1,10 @@
+.skills-list p {
+    padding-left: 20px;
+}
+
+.top-image-skills {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0% 40%;
+}

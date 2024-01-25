@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>About Me</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/resume.css">
+
+</head>
+
+<body>
+    <div id="header" class="header">
+
+        <a id="left-section" class="left-section" href="/home.html">
+            <img id="home-image" src="icons/home.svg">
+            <div>Home</div>
+        </a>
+
+        <div id="right-section" class="right-section">
+            <a id="skills-button" class="skills-button" href="/skills.html">
+                Skills
+            </a>
+            <a id="experience-button" class="experience-button" href="/experience.html">
+                Experience
+            </a>
+            <a id="resume-button" class="resume-buttons" href="/resume.html">
+                Résumé
+            </a>
+            <a id="contact-button" class="contact-button" href="/contact.html">
+                Contact
+            </a>
+            <label class="switch">
+                <input id="toggleSwitch" type="checkbox">
+                <span for="check" class="slider round"></span>
+            </label>
+
+            <script>
+                document.getElementById("toggleSwitch").onclick = function () {
+                    myFunction()
+                };
+
+                function myFunction() {
+                    let color = document.body.style.backgroundColor;
+
+                    const myImg = document.getElementById("home-image");
+
+                    if (color === 'black') {
+                        document.body.style.backgroundColor = "white";
+                        document.body.style.color = "black";
+                        document.getElementById("header").style.backgroundColor = "white";
+                        document.getElementById("left-section").style.color = "black";
+                        document.getElementById("skills-button").style.color = "black"
+                        document.getElementById("experience-button").style.color = "black"
+                        document.getElementById("resume-button").style.color = "black"
+                        document.getElementById("contact-button").style.color = "black"
+                        myImg.src = "icons/home.svg";
+                    } else {
+                        document.body.style.backgroundColor = "black";
+                        document.body.style.color = "white";
+                        document.getElementById("header").style.backgroundColor = "black";
+                        document.getElementById("left-section").style.color = "white";
+                        document.getElementById("skills-button").style.color = "white"
+                        document.getElementById("experience-button").style.color = "white"
+                        document.getElementById("resume-button").style.color = "white"
+                        document.getElementById("contact-button").style.color = "white"
+                        myImg.src = "icons/inverted-home.png";
+                    }
+
+                }
+            </script>
+        </div>
+    </div>
+
+    <div class="home-page">
+
+        <div>
+            <img class="top-image-resume" src="/images/spaceimg.jpeg">
+        </div>
+
+        <div class="inner-page">
+            <div style="display: flex; flex: 1;">
+
+            </div>
+
+            <div class="info-page">
+                <h1 style="text-align: center; text-decoration: underline; margin-bottom: 50px;">Résumé</h1>
+
+                <p><a class="resume-download-link" target="_blank" rel="noopener"
+                        href="/files/Abdul Khan Resume.pdf">Open in browser (__
+                        KB PDF)</a></p>
+                <embed src="/files/Abdul Khan Resume.pdf" title="Abdul's Résumé"
+                    style="width: 100%; aspect-ratio: 1/1.25;">
+
+            </div>
+
+            <div style="display: flex; flex: 1;">
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

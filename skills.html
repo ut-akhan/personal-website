@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>About Me</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/skills.css">
+
+</head>
+
+<body>
+    <div id="header" class="header">
+
+        <a id="left-section" class="left-section" href="/home.html">
+            <img id="home-image" src="icons/home.svg">
+            <div>Home</div>
+        </a>
+
+        <div id="right-section" class="right-section">
+            <a id="skills-button" class="skills-button" href="/skills.html">
+                Skills
+            </a>
+            <a id="experience-button" class="experience-button" href="/experience.html">
+                Experience
+            </a>
+            <a id="resume-button" class="resume-buttons" href="/resume.html">
+                Résumé
+            </a>
+            <a id="contact-button" class="contact-button" href="/contact.html">
+                Contact
+            </a>
+            <label class="switch">
+                <input id="toggleSwitch" type="checkbox">
+                <span for="check" class="slider round"></span>
+            </label>
+
+            <script>
+                document.getElementById("toggleSwitch").onclick = function () {
+                    myFunction()
+                };
+
+                function myFunction() {
+                    let color = document.body.style.backgroundColor;
+
+                    const myImg = document.getElementById("home-image");
+
+                    if (color === 'black') {
+                        document.body.style.backgroundColor = "white";
+                        document.body.style.color = "black";
+                        document.getElementById("header").style.backgroundColor = "white";
+                        document.getElementById("left-section").style.color = "black";
+                        document.getElementById("skills-button").style.color = "black"
+                        document.getElementById("experience-button").style.color = "black"
+                        document.getElementById("resume-button").style.color = "black"
+                        document.getElementById("contact-button").style.color = "black"
+                        myImg.src = "icons/home.svg";
+                    } else {
+                        document.body.style.backgroundColor = "black";
+                        document.body.style.color = "white";
+                        document.getElementById("header").style.backgroundColor = "black";
+                        document.getElementById("left-section").style.color = "white";
+                        document.getElementById("skills-button").style.color = "white"
+                        document.getElementById("experience-button").style.color = "white"
+                        document.getElementById("resume-button").style.color = "white"
+                        document.getElementById("contact-button").style.color = "white"
+                        myImg.src = "icons/inverted-home.png";
+                    }
+
+                }
+            </script>
+        </div>
+    </div>
+
+    <div class="home-page">
+
+        <div>
+            <img class="top-image-skills" src="/images/coding.jpeg">
+        </div>
+
+        <div class="inner-page">
+            <div style="display: flex; flex: 1;">
+
+            </div>
+
+            <div class="info-page">
+
+                <h1 style="text-align: center; text-decoration: underline; margin-bottom: 40px;">Skills</h1>
+
+                <div class="skills-list">
+                    <h2>Programming Languages</h2>
+                    <p>&#x2022; 4 years of experience with Swift/SwiftUI</p>
+                    <p>&#x2022; 4 years of experience with Python</p>
+                    <p>&#x2022; 1 year of experience with HTML5 and CSS</p>
+                    <p>&#x2022; 1 year of experience with MATLAB</p>
+                    <p>&#x2022; Few months of experience with C</p>
+                    <p>&#x2022; Few months of experience with JavaScript and Node.js</p>
+
+                    <h2>Technical Skills</h2>
+                    <p>&#x2022; Proficient in utilising Git as a version control system</p>
+                    <p>&#x2022; 4 years of experience in Object Oriented Programming (OOP) with JSON and APIs</p>
+                    <p>&#x2022; Linear and binary search</p>
+                    <p>&#x2022; Sorting algorithms</p>
+                    <p>&#x2022; Markup anguages</p>
+                    <p>&#x2022; Writing elegant, readable, and efficient code, using modern software development
+                        workflows
+                    </p>
+
+                    <h2>Languages</h2>
+                    <p>&#x2022; Native in written and spoken English</p>
+                    <p>&#x2022; Near-native in spoken Urdu</p>
+                    <p>&#x2022; Basic in written and spoken French</p>
+                    <p>&#x2022; Basic in written and spoken Arabic</p>
+
+                    <h2>Soft Skills</h2>
+                    <p>&#x2022; Strong verbal and written engineering communication skills</p>
+                    <p>&#x2022; Superb leadership and individual skills when working with a team</p>
+                    <p>&#x2022; Holding a passion and love for learning</p>
+                    <p>&#x2022; Excellent organizational skills and social awareness</p>
+
+                </div>
+
+            </div>
+
+            <div style="display: flex; flex: 1;">
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.contact-list {
+    line-height: 0px;
+}
+
+.contact-list div {
+    margin-top: 5px;
+    background-color: rgb(255, 230, 201);
+    padding: 20px;
+    border-style: solid;
+    border-color: rgb(255, 197, 136);
+    border-radius: 40px;
+    color: black;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+}
+
+.contact-grid img {
+    width: 40px;
+    padding-right: 0;
+}
+
+.contact-list div:hover {
+    transition: box-shadow 0.15s;
+    vertical-align: top;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.linkedin-link {
+    font-size: 12px;
+    color: rgb(152, 152, 255);
+}
+
+.linkedin-link:hover {
+    color: rgb(73, 73, 255);
+}
