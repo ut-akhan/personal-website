@@ -35,6 +35,10 @@
     border-radius: 25px;
 }
 
+.github-icon {
+    width: 50px;
+}
+
 .name {
     font-weight: 1000;
 }
