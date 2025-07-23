@@ -54,33 +54,16 @@
                 };
 
                 function myFunction() {
-                    let color = document.body.style.backgroundColor;
-
+                    const isDark = document.body.classList.toggle("dark-mode");
                     const myImg = document.getElementById("home-image");
 
-                    if (color === 'black') {
-                        document.body.style.backgroundColor = "white";
-                        document.body.style.color = "black";
-                        document.getElementById("header").style.backgroundColor = "white";
-                        document.getElementById("left-section").style.color = "black";
-                        document.getElementById("skills-button").style.color = "black"
-                        document.getElementById("experience-button").style.color = "black"
-                        document.getElementById("resume-button").style.color = "black"
-                        document.getElementById("contact-button").style.color = "black"
-                        myImg.src = "icons/home.svg";
-                    } else {
-                        document.body.style.backgroundColor = "black";
-                        document.body.style.color = "white";
-                        document.getElementById("header").style.backgroundColor = "black";
-                        document.getElementById("left-section").style.color = "white";
-                        document.getElementById("skills-button").style.color = "white"
-                        document.getElementById("experience-button").style.color = "white"
-                        document.getElementById("resume-button").style.color = "white"
-                        document.getElementById("contact-button").style.color = "white"
+                    if (isDark) {
                         myImg.src = "icons/inverted-home.png";
+                    } else {
+                        myImg.src = "icons/home.svg";
                     }
-
                 }
+
             </script>
         </div>
     </div>
@@ -95,7 +78,67 @@
         <div class="info-page">
             <h1 style="text-align: center; text-decoration: underline; margin-bottom: 50px;">Experience</h1>
 
-            <p class="warning">Currently under development, please check again later!</p>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <img src="./images/job1.jpg" alt="Job 1 Image" class="experience-image">
+                    <div class="experience-content">
+                        <h3>Software Engineering Intern</h3>
+                        <p class="experience-date">June 2023 - August 2023</p>
+                        <p>Worked on developing front-end features using React and improved UI responsiveness across the platform.</p>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img src="./images/job2.jpg" alt="Job 2 Image" class="experience-image">
+                    <div class="experience-content">
+                        <h3>Teaching Assistant</h3>
+                        <p class="experience-date">September 2022 - May 2023</p>
+                        <p>Assisted students in a Data Structures course and helped debug code and grade assignments.</p>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img src="./images/job1.jpg" alt="Job 1 Image" class="experience-image">
+                    <div class="experience-content">
+                        <h3>Software Engineering Intern</h3>
+                        <p class="experience-date">June 2023 - August 2023</p>
+                        <p>Worked on developing front-end features using React and improved UI responsiveness across the platform.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <h1 style="text-align: center; text-decoration: underline; margin-bottom: 50px;">Projects</h1>
+
+            <div class="experience-container">
+                <div class="experience-card">
+                    <img src="./images/job1.jpg" alt="Job 1 Image" class="experience-image">
+                    <div class="experience-content">
+                        <h3>Software Engineering Intern</h3>
+                        <p class="experience-date">June 2023 - August 2023</p>
+                        <p>Worked on developing front-end features using React and improved UI responsiveness across the platform.</p>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img src="./images/job2.jpg" alt="Job 2 Image" class="experience-image">
+                    <div class="experience-content">
+                        <h3>Teaching Assistant</h3>
+                        <p class="experience-date">September 2022 - May 2023</p>
+                        <p>Assisted students in a Data Structures course and helped debug code and grade assignments.</p>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img src="./images/job1.jpg" alt="Job 1 Image" class="experience-image">
+                    <div class="experience-content">
+                        <h3>Software Engineering Intern</h3>
+                        <p class="experience-date">June 2023 - August 2023</p>
+                        <p>Worked on developing front-end features using React and improved UI responsiveness across the platform.</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </div>
